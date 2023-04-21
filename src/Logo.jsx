@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 export default function Logo({ className }) {
   return (
-    <a className={className} href="/">
+    <Link className={className} to="/">
       <svg
         className="w-full"
         width={125}
@@ -34,6 +36,6 @@ export default function Logo({ className }) {
           fill="white"
         />
       </svg>
-    </a>
+    </Link>
   );
 }
