@@ -5,7 +5,6 @@ const ThemeContext = createContext();
 
 function AppProvider(props) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   const isScreenLg = useMediaQuery("(min-width: 1024px)");
 
   function handleBurgerClick() {
@@ -32,7 +31,6 @@ function AppProvider(props) {
 
   const value = {
     isMobileMenuOpen: isMobileMenuOpen,
-    isSubmenuOpen: isSubmenuOpen,
     isScreenLg: isScreenLg,
     handleBurgerClick: handleBurgerClick,
     handleMenuMouseEnter: handleMenuMouseEnter,

@@ -1,7 +1,8 @@
 import { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import clsx from "clsx";
 import Icons from "./Icons";
-import data from "./data.json";
+import data from "./data/data.json";
 import { ThemeContext } from "./AppContext.jsx";
 
 function DropdownMenu({ submenu }) {
@@ -33,9 +34,9 @@ function MenuItem({ text, link, submenu }) {
       onMouseLeave={(e) => context.handleMenuMouseLeave(e)}
       className="relative group flex flex-col gap-1 lg:gap-0"
     >
-      <a
-        className="peer group flex items-center gap-2 h-10 px-4 leading-xs md:leading-sm transition-colors hover:bg-[#ffffff20] whitespace-nowrap rounded-md group-aria-[hidden=false]:bg-[#ffffff20] data-[show-submenu=true]:bg-[#ffffff20] lg:data-[show-submenu=true]:bg-transparent"
-        href={link}
+      <NavLink
+        className="peer group flex items-center gap-2 h-10 px-4 leading-xs md:leading-sm transition-colors hover:bg-[#ffffff20] whitespace-nowrap rounded-md group-aria-[hidden=false]:bg-[#ffffff20] data-[show-submenu=true]:bg-[#ffffff20] lg:data-[show-submenu=true]:bg-transparent aria-[current=page]:!bg-[#ffffff20]"
+        to={link}
         onClick={(e) => submenu && context.handleMenuClick(e)}
       >
         {text}
@@ -45,7 +46,7 @@ function MenuItem({ text, link, submenu }) {
             icon="chevron"
           />
         )}
-      </a>
+      </NavLink>
       {submenu && (
         <DropdownMenu submenu={submenu} handleToggle={context.handleToggle} />
       )}

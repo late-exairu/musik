@@ -6,8 +6,8 @@
         "text": "Home"
       },
       {
-        "link": "/bands",
-        "text": "Bands",
+        "link": "/artists",
+        "text": "Artists",
         "submenu": [
           {
             "text": "Rock",
