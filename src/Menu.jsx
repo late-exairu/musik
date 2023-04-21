@@ -1,10 +1,12 @@
+import { useContext } from "react";
 import clsx from "clsx";
 import Icons from "./Icons";
 import data from "./data.json";
+import { ThemeContext } from "./AppContext.jsx";
 
 function DropdownMenu({ submenu }) {
   return (
-    <div className="lg:invisible hidden lg:opacity-0 relative lg:absolute rounded-md left-0 lg:top-[150%] min-w-full lg:transition-all lg:block group-aria-[hidden=false]:visible group-aria-[hidden=false]:opacity-100 group-aria-[hidden=false]:top-full peer-data-[show-submenu=true]:block peer-data-[show-submenu=true]:bg-whiteOpacity">
+    <div className="lg:invisible hidden lg:opacity-0 relative lg:absolute rounded-md left-0 lg:top-[150%] min-w-full lg:transition-all lg:block group-aria-[hidden=false]:visible group-aria-[hidden=false]:opacity-100 group-aria-[hidden=false]:top-full peer-data-[show-submenu=true]:block peer-data-[show-submenu=true]:bg-whiteOpacity lg:peer-data-[show-submenu=true]:bg-transparent">
       <div className="hidden lg:block border-solid w-2 border-b-white border-b-[6px] border-x-transparent border-x-[7px] border-t-0 ml-4"></div>
       <ul className="text-white lg:bg-white lg:text-black capitalize rounded-md lg:p-1 flex gap-1 flex-col">
         {submenu.map((item, index) => (
@@ -22,64 +24,42 @@ function DropdownMenu({ submenu }) {
   );
 }
 
-function MenuItem({
-  handleToggle,
-  onMouseEnter,
-  onMouseLeave,
-  onMenuClick,
-  text,
-  link,
-  submenu,
-}) {
+function MenuItem({ text, link, submenu }) {
+  const context = useContext(ThemeContext);
+
   return (
     <li
-      onMouseEnter={(e) => onMouseEnter(e)}
-      onMouseLeave={(e) => onMouseLeave(e)}
+      onMouseEnter={(e) => context.handleMenuMouseEnter(e)}
+      onMouseLeave={(e) => context.handleMenuMouseLeave(e)}
       className="relative group flex flex-col gap-1 lg:gap-0"
     >
       <a
-        className="peer group flex items-center gap-2 h-10 px-4 leading-xs md:leading-sm transition-colors hover:bg-[#ffffff20] whitespace-nowrap rounded-md group-aria-[hidden=false]:bg-[#ffffff20] data-[show-submenu=true]:bg-[#ffffff20]"
+        className="peer group flex items-center gap-2 h-10 px-4 leading-xs md:leading-sm transition-colors hover:bg-[#ffffff20] whitespace-nowrap rounded-md group-aria-[hidden=false]:bg-[#ffffff20] data-[show-submenu=true]:bg-[#ffffff20] lg:data-[show-submenu=true]:bg-transparent"
         href={link}
-        onClick={(e) => submenu && onMenuClick(e)}
+        onClick={(e) => submenu && context.handleMenuClick(e)}
       >
         {text}
         {submenu && (
           <Icons
-            className="transition-transform group-aria-[hidden=false]:rotate-180 group-data-[show-submenu=true]:rotate-180"
+            className="transition-transform group-aria-[hidden=false]:rotate-180 group-data-[show-submenu=true]:rotate-180 lg:group-data-[show-submenu=true]:rotate-0"
             icon="chevron"
           />
         )}
       </a>
       {submenu && (
-        <DropdownMenu submenu={submenu} handleToggle={handleToggle} />
+        <DropdownMenu submenu={submenu} handleToggle={context.handleToggle} />
       )}
     </li>
   );
 }
 
-export default function Menu({ isMobileMenuOpen }) {
+export default function Menu() {
   const headData = data.header;
+  const context = useContext(ThemeContext);
   const classes = clsx({
-    "visible opacity-100": isMobileMenuOpen,
-    "invisible opacity-0": !isMobileMenuOpen,
+    "visible opacity-100": context.isMobileMenuOpen,
+    "invisible opacity-0": !context.isMobileMenuOpen,
   });
-
-  function handleMenuMouseEnter(e) {
-    e.currentTarget.setAttribute("aria-hidden", "false");
-  }
-
-  function handleMenuMouseLeave(e) {
-    e.currentTarget.setAttribute("aria-hidden", "true");
-  }
-
-  function handleMenuClick(e) {
-    e.preventDefault();
-    if (e.currentTarget.getAttribute("data-show-submenu") === null) {
-      e.currentTarget.setAttribute("data-show-submenu", "true");
-    } else {
-      e.currentTarget.removeAttribute("data-show-submenu");
-    }
-  }
 
   return (
     <div
@@ -90,9 +70,6 @@ export default function Menu({ isMobileMenuOpen }) {
           {headData.menu.map((item, index) => (
             <MenuItem
               key={index}
-              onMouseEnter={handleMenuMouseEnter}
-              onMouseLeave={handleMenuMouseLeave}
-              onMenuClick={handleMenuClick}
               text={item.text}
               link={item.link}
               submenu={item.submenu}

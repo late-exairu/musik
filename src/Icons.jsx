@@ -37,5 +37,5 @@ const iconSet = {
 export default function Icons({ icon, className }) {
   // const classes = clsx(className);
 
-  return <div className={`${className}`}>{iconSet[icon]}</div>;
+  return <div className={`${className} shrink-0`}>{iconSet[icon]}</div>;
 }
