@@ -1,0 +1,64 @@
+{
+  "header": {
+    "menu": [
+      {
+        "link": "/",
+        "text": "Home"
+      },
+      {
+        "link": "/bands",
+        "text": "Bands",
+        "submenu": [
+          {
+            "text": "Rock",
+            "link": "/"
+          },
+          {
+            "text": "Dance",
+            "link": "/"
+          },
+          {
+            "text": "Rap",
+            "link": "/"
+          }
+        ]
+      },
+      {
+        "link": "/schedule",
+        "text": "Schedule",
+        "submenu": [
+          {
+            "text": "Nearest Events",
+            "link": "/"
+          },
+          {
+            "text": "2023",
+            "link": "/"
+          },
+          {
+            "text": "2024",
+            "link": "/"
+          }
+        ]
+      },
+      {
+        "link": "/contacts",
+        "text": "Contact Us"
+      }
+    ]
+  },
+  "page": [
+    {
+      "key": "home",
+      "list": {
+        "asd": "asd"
+      }
+    },
+    {
+      "key": "schedule",
+      "list": {
+        "asd": "asd"
+      }
+    }
+  ]
+}
