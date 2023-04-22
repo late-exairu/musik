@@ -53,6 +53,7 @@ export default {
     fontFamily: {
       sans: ["Raleway, sans-serif"],
       headline: ["Montserrat, sans-serif"],
+      localSans: ["sans-serif"],
     },
     extend: {},
   },

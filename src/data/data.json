@@ -60,5 +60,22 @@
         "asd": "asd"
       }
     }
-  ]
+  ],
+  "pages": {
+    "home": {
+      "hero": {
+        "title": "The Best experience of music in 2021",
+        "description": "Get ready to rock out at the biggest music festival of the year! With an incredible lineup of top artists and an amazing atmosphere, this festival is the place to be for music lovers everywhere.",
+        "btnPrimary": {
+          "text": "Get Started",
+          "link": "/"
+        },
+        "btnSecondary": {
+          "icon": "play",
+          "text": "Watch Video",
+          "link": "/"
+        }
+      }
+    }
+  }
 }
