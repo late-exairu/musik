@@ -4,7 +4,7 @@
 
 @layer base {
   .button {
-    @apply md:text-base leading-xs md:leading-sm text-center transition-all whitespace-pre-wrap font-headline rounded-lg inline-flex text-sm lg:gap-10 text-white h-10 md:h-12 lg:h-14 justify-center items-center px-8 font-bold;
+    @apply inline-flex h-10 items-center justify-center whitespace-pre-wrap rounded-lg px-8 text-center font-headline text-sm font-bold leading-xs text-white transition-all md:h-12 md:text-base md:leading-sm lg:h-14 lg:gap-10;
   }
 }
 

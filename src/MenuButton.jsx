@@ -7,12 +7,12 @@ export default function MenuButton() {
 
   return (
     <button
-      className="flex relative z-40 flex-col h-9 w-9 border-2 border-white rounded justify-center items-center group shrink-0"
+      className="group relative z-40 flex h-9 w-9 shrink-0 flex-col items-center justify-center rounded border-2 border-white"
       onClick={context.handleBurgerClick}
     >
       <div
         className={`${defaultStyles} ${
-          context.isMobileMenuOpen ? "rotate-45 translate-y-[6px]" : null
+          context.isMobileMenuOpen ? "translate-y-[6px] rotate-45" : null
         }`}
       />
       <div
@@ -22,7 +22,7 @@ export default function MenuButton() {
       />
       <div
         className={`${defaultStyles} ${
-          context.isMobileMenuOpen ? "-rotate-45 -translate-y-[6px]" : null
+          context.isMobileMenuOpen ? "-translate-y-[6px] -rotate-45" : null
         }`}
       />
     </button>

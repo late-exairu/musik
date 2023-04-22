@@ -22,16 +22,16 @@ export default function Hero({ title, description, btnPrimary, btnSecondary }) {
   };
 
   return (
-    <section className="flex justify-center min-h-screen items-center bg-black text-white bg-cover bg-center bg-[url('./src/assets/hero-bg.png')]">
+    <section className="flex min-h-screen items-center justify-center bg-black bg-[url('./src/assets/hero-bg.png')] bg-cover bg-center text-white">
       <div className="absolute inset-0 bg-gradient-to-b from-[#381DDBcc] to-[#00000080]"></div>
-      <div className="container py-24 max-w-sm relative z-10 text-center sm:max-w-[560px] md:pt-24 md:pb-32 lg:pt-32 lg:pb-52 md:max-w-[740px] lg:max-w-[980px]">
-        <h2 className="text-3xl leading-xs font-headline font-bold capitalize md:text-5xl lg:text-6xl mb-3 sm:mb-6 lg:mb-10">
+      <div className="container relative z-10 max-w-sm py-24 text-center sm:max-w-[560px] md:max-w-[740px] md:pb-32 md:pt-24 lg:max-w-[980px] lg:pb-52 lg:pt-32">
+        <h2 className="mb-3 font-headline text-3xl font-bold capitalize leading-xs sm:mb-6 md:text-5xl lg:mb-10 lg:text-6xl">
           {title}
         </h2>
-        <p className="text-lg md:text-xl lg:text-2xl leading-lg">
+        <p className="text-lg leading-lg md:text-xl lg:text-2xl">
           {description}
         </p>
-        <div className="flex mt-6 lg:mt-10 gap-3 lg:gap-5 justify-center">
+        <div className="mt-6 flex justify-center gap-3 lg:mt-10 lg:gap-5">
           <a
             className="button bg-red hover:bg-redHover"
             href="{{hero.btnPrimary.link}}"
@@ -39,11 +39,11 @@ export default function Hero({ title, description, btnPrimary, btnSecondary }) {
             {btnPrimary.text}
           </a>
           <a
-            className="button bg-transparent gap-3 lg:gap-5 text-base whitespace-nowrap lg:items-center lg:text-xl px-2 hover:bg-whiteOpacity"
+            className="button gap-3 whitespace-nowrap bg-transparent px-2 text-base hover:bg-whiteOpacity lg:items-center lg:gap-5 lg:text-xl"
             href={btnSecondary.link}
           >
             <Icons
-              className="w-10 h-10 shrink-0 md:w-12 md:h-12 lg:w-14 lg:h-14"
+              className="h-10 w-10 shrink-0 md:h-12 md:w-12 lg:h-14 lg:w-14"
               icon={btnSecondary.icon}
             />
             {btnSecondary.text}
@@ -51,7 +51,7 @@ export default function Hero({ title, description, btnPrimary, btnSecondary }) {
         </div>
       </div>
 
-      <div className="absolute flex gap-5 font-black inset-x-auto font-localSans bottom-5 text-stroke-0 text-3xl md:gap-7 lg:gap-9 sm:text-4xl md:text-6xl lg:text-[120px] xl:text-[142px]">
+      <div className="text-stroke-0 absolute inset-x-auto bottom-5 flex gap-5 font-localSans text-3xl font-black sm:text-4xl md:gap-7 md:text-6xl lg:gap-9 lg:text-[120px] xl:text-[142px]">
         <Countdown date={Date.now() + 500000000} renderer={renderer} />
       </div>
     </section>

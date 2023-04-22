@@ -8,7 +8,7 @@ export default function Header() {
   const context = useContext(ThemeContext);
 
   return (
-    <div className="py-4 z-20 fixed inset-x-0 top-0 lg:py-8">
+    <div className="fixed inset-x-0 top-0 z-20 py-4 lg:py-8">
       <div className="container flex items-center justify-between">
         <Logo className="z-40 w-24 shrink-0 lg:w-32" />
 

@@ -7,13 +7,13 @@ import { ThemeContext } from "./AppContext.jsx";
 
 function DropdownMenu({ submenu }) {
   return (
-    <div className="lg:invisible hidden lg:opacity-0 relative lg:absolute rounded-md left-0 lg:top-[150%] min-w-full lg:transition-all lg:block group-aria-[hidden=false]:visible group-aria-[hidden=false]:opacity-100 group-aria-[hidden=false]:top-full peer-data-[show-submenu=true]:block peer-data-[show-submenu=true]:bg-whiteOpacity lg:peer-data-[show-submenu=true]:bg-transparent">
-      <div className="hidden lg:block border-solid w-2 border-b-white border-b-[6px] border-x-transparent border-x-[7px] border-t-0 ml-4"></div>
-      <ul className="text-white lg:bg-white lg:text-black capitalize rounded-md lg:p-1 flex gap-1 flex-col">
+    <div className="relative left-0 hidden min-w-full rounded-md group-aria-[hidden=false]:visible group-aria-[hidden=false]:top-full group-aria-[hidden=false]:opacity-100 peer-data-[show-submenu=true]:block peer-data-[show-submenu=true]:bg-whiteOpacity lg:invisible lg:absolute lg:top-[150%] lg:block lg:opacity-0 lg:transition-all lg:peer-data-[show-submenu=true]:bg-transparent">
+      <div className="ml-4 hidden w-2 border-x-[7px] border-b-[6px] border-t-0 border-solid border-x-transparent border-b-white lg:block"></div>
+      <ul className="flex flex-col gap-1 rounded-md capitalize text-white lg:bg-white lg:p-1 lg:text-black">
         {submenu.map((item, index) => (
           <li key={index}>
             <a
-              className="flex items-center gap-2 h-10 px-4 transition-colors hover:bg-whiteOpacity lg:hover:bg-[#00000010] rounded-md lg:hover:text-blue whitespace-nowrap"
+              className="flex h-10 items-center gap-2 whitespace-nowrap rounded-md px-4 transition-colors hover:bg-whiteOpacity lg:hover:bg-[#00000010] lg:hover:text-blue"
               href={item.link}
             >
               {item.text}
@@ -32,10 +32,10 @@ function MenuItem({ text, link, submenu }) {
     <li
       onMouseEnter={(e) => context.handleMenuMouseEnter(e)}
       onMouseLeave={(e) => context.handleMenuMouseLeave(e)}
-      className="relative group flex flex-col gap-1 lg:gap-0"
+      className="group relative flex flex-col gap-1 lg:gap-0"
     >
       <NavLink
-        className="peer group flex items-center gap-2 h-10 px-4 leading-xs md:leading-sm transition-colors hover:bg-[#ffffff20] whitespace-nowrap rounded-md group-aria-[hidden=false]:bg-[#ffffff20] data-[show-submenu=true]:bg-[#ffffff20] lg:data-[show-submenu=true]:bg-transparent aria-[current=page]:!bg-[#ffffff20]"
+        className="group peer flex h-10 items-center gap-2 whitespace-nowrap rounded-md px-4 leading-xs transition-colors hover:bg-[#ffffff20] aria-[current=page]:!bg-[#ffffff20] group-aria-[hidden=false]:bg-[#ffffff20] data-[show-submenu=true]:bg-[#ffffff20] md:leading-sm lg:data-[show-submenu=true]:bg-transparent"
         to={link}
         onClick={(e) => submenu && context.handleMenuClick(e)}
       >
@@ -64,10 +64,10 @@ export default function Menu() {
 
   return (
     <div
-      className={`${classes} fixed inset-0 pt-20 px-5 flex-col lg:-px-0 lg:pt-0 transition-all lg:backdrop-blur-0 bg-whiteOpacity z-30 items-center justify-center lg:block backdrop-blur-md lg:visible lg:opacity-100 lg:relative lg:bg-transparent`}
+      className={`${classes} lg:-px-0 fixed inset-0 z-30 flex-col items-center justify-center bg-whiteOpacity bg-whiteOpacity px-5 pt-20 backdrop-blur-md transition-all lg:visible lg:relative lg:block lg:bg-transparent lg:pt-0 lg:opacity-100 lg:backdrop-blur-0`}
     >
-      <nav className="flex flex-col max-w-xs mx-auto lg:mx-0 lg:max-w-none lg:flex-row gap-2">
-        <ul className="text-sm flex-col uppercase lg:items-center font-headline lg:flex-row font-semibold flex gap-2 text-white">
+      <nav className="mx-auto flex max-w-xs flex-col gap-2 lg:mx-0 lg:max-w-none lg:flex-row">
+        <ul className="flex flex-col gap-2 font-headline text-sm font-semibold uppercase text-white lg:flex-row lg:items-center">
           {headData.menu.map((item, index) => (
             <MenuItem
               key={index}
@@ -78,7 +78,7 @@ export default function Menu() {
           ))}
         </ul>
         <a
-          className="button bg-white text-blue lg:ml-5 hover:bg-whiteHover"
+          className="button bg-white text-blue hover:bg-whiteHover lg:ml-5"
           href="/"
         >
           GET TICKETS
