@@ -4,6 +4,9 @@ export default {
   theme: {
     transitionDuration: {
       DEFAULT: "300ms",
+      100: "100ms",
+      200: "200ms",
+      300: "300ms",
     },
     container: {
       center: true,
@@ -37,6 +40,14 @@ export default {
       lg: "1.64",
       lx: "1.82",
       double: "2",
+    },
+    borderRadius: {
+      none: "0",
+      sm: "2px",
+      DEFAULT: "5px",
+      md: "10px",
+      lg: "24px",
+      full: "9999px",
     },
     colors: {
       transparent: "transparent",

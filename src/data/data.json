@@ -75,6 +75,71 @@
           "text": "Watch Video",
           "link": "/"
         }
+      },
+      "categories": {
+        "title": "Explore By Category",
+        "categoriesList": [
+          {
+            "bgColor": "#DB841D",
+            "icon": "pop",
+            "title": "Pop",
+            "description": "Popular music that emphasizes catchy melodies, danceable rhythms, and relatable lyrics."
+          },
+          {
+            "bgColor": "#FC5252",
+            "icon": "folk",
+            "title": "Folk",
+            "description": "Traditional music that originated in local and rural communities, often passed down orally from generation to generation."
+          },
+          {
+            "bgColor": "#381DDB",
+            "icon": "instrumental",
+            "title": "Instrumental",
+            "description": "Music that is composed or performed without vocals or lyrics."
+          },
+          {
+            "bgColor": "#C00096",
+            "icon": "rock",
+            "title": "Rock",
+            "description": "Popular music characterized by the use of electric guitars, bass, and drums, and often accompanied by vocals."
+          },
+          {
+            "bgColor": "#84C4FF",
+            "icon": "jazz",
+            "title": "Jazz",
+            "description": "Music characterized by improvisation, syncopated rhythms, and a wide variety of musical instruments, including trumpet, saxophone, piano, bass, and drums."
+          },
+          {
+            "bgColor": "#DB841D",
+            "icon": "pop",
+            "title": "Pop",
+            "description": "Popular music that emphasizes catchy melodies, danceable rhythms, and relatable lyrics."
+          },
+          {
+            "bgColor": "#FC5252",
+            "icon": "folk",
+            "title": "Folk",
+            "description": "Traditional music that originated in local and rural communities, often passed down orally from generation to generation."
+          },
+          {
+            "bgColor": "#381DDB",
+            "icon": "instrumental",
+            "title": "Instrumental",
+            "description": "Music that is composed or performed without vocals or lyrics."
+          },
+          {
+            "bgColor": "#C00096",
+            "icon": "rock",
+            "title": "Rock",
+            "description": "Popular music characterized by the use of electric guitars, bass, and drums, and often accompanied by vocals."
+          },
+          {
+            "bgColor": "#84C4FF",
+            "icon": "jazz",
+            "title": "Jazz",
+            "description": "Music characterized by improvisation, syncopated rhythms, and a wide variety of musical instruments, including trumpet, saxophone, piano, bass, and drums."
+          }
+        ]
       }
     }
   }
