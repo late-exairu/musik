@@ -2,7 +2,7 @@ import { useContext } from "react";
 import Logo from "./Logo";
 import Menu from "./Menu";
 import MenuButton from "./MenuButton";
-import { ThemeContext } from "./AppContext.jsx";
+import { ThemeContext } from "../context/AppContext.jsx";
 
 export default function Header() {
   const context = useContext(ThemeContext);

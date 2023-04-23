@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./Header";
-import Home from "./Home";
-import Artists from "./Artists";
-import Schedule from "./Schedule";
-import Contacts from "./Contacts";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Artists from "./pages/Artists";
+import Schedule from "./pages/Schedule";
+import Contacts from "./pages/Contacts";
 import data from "./data/data.json";
 
 function App() {

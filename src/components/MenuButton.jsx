@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "./AppContext.jsx";
+import { ThemeContext } from "../context/AppContext.jsx";
 
 export default function MenuButton() {
   const context = useContext(ThemeContext);

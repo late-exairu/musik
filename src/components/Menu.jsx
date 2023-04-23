@@ -2,8 +2,8 @@ import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import clsx from "clsx";
 import Icons from "./Icons";
-import data from "./data/data.json";
-import { ThemeContext } from "./AppContext.jsx";
+import data from "../data/data.json";
+import { ThemeContext } from "../context/AppContext.jsx";
 
 function DropdownMenu({ submenu }) {
   return (
@@ -64,7 +64,7 @@ export default function Menu() {
 
   return (
     <div
-      className={`${classes} lg:-px-0 fixed inset-0 z-30 flex-col items-center justify-center bg-whiteOpacity bg-whiteOpacity px-5 pt-20 backdrop-blur-md transition-all lg:visible lg:relative lg:block lg:bg-transparent lg:pt-0 lg:opacity-100 lg:backdrop-blur-0`}
+      className={`${classes} lg:-px-0 fixed inset-0 z-30 flex-col items-center justify-center bg-whiteOpacity px-5 pt-20 backdrop-blur-md transition-all lg:visible lg:relative lg:block lg:bg-transparent lg:pt-0 lg:opacity-100 lg:backdrop-blur-0`}
     >
       <nav className="mx-auto flex max-w-xs flex-col gap-2 lg:mx-0 lg:max-w-none lg:flex-row">
         <ul className="flex flex-col gap-2 font-headline text-sm font-semibold uppercase text-white lg:flex-row lg:items-center">
