@@ -31,6 +31,7 @@ export default {
       "4xl": "2.875rem",
       "5xl": "3.75rem",
       "6xl": "4.5rem",
+      "7xl": "5rem",
     },
     lineHeight: {
       none: "1",
@@ -43,8 +44,9 @@ export default {
     },
     borderRadius: {
       none: "0",
-      sm: "2px",
-      DEFAULT: "5px",
+      xs: "2px",
+      sm: "5px",
+      DEFAULT: "8px",
       md: "10px",
       lg: "24px",
       full: "9999px",

@@ -4,16 +4,17 @@ import clsx from "clsx";
 import Icons from "./Icons";
 import data from "../data/data.json";
 import { ThemeContext } from "../context/AppContext.jsx";
+import Button from "./Button";
 
 function DropdownMenu({ submenu }) {
   return (
-    <div className="relative left-0 hidden min-w-full rounded-md group-aria-[hidden=false]:visible group-aria-[hidden=false]:top-full group-aria-[hidden=false]:opacity-100 peer-data-[show-submenu=true]:block peer-data-[show-submenu=true]:bg-whiteOpacity lg:invisible lg:absolute lg:top-[150%] lg:block lg:opacity-0 lg:transition-all lg:peer-data-[show-submenu=true]:bg-transparent">
+    <div className="relative left-0 hidden min-w-full rounded group-aria-[hidden=false]:visible group-aria-[hidden=false]:top-full group-aria-[hidden=false]:opacity-100 peer-data-[show-submenu=true]:block peer-data-[show-submenu=true]:bg-whiteOpacity lg:invisible lg:absolute lg:top-[150%] lg:block lg:opacity-0 lg:transition-all lg:peer-data-[show-submenu=true]:bg-transparent">
       <div className="ml-4 hidden w-2 border-x-[7px] border-b-[6px] border-t-0 border-solid border-x-transparent border-b-white lg:block"></div>
-      <ul className="flex flex-col gap-1 rounded-md capitalize text-white lg:bg-white lg:p-1 lg:text-black">
+      <ul className="flex flex-col gap-1 rounded capitalize text-white lg:bg-white lg:p-1 lg:text-black">
         {submenu.map((item, index) => (
           <li key={index}>
             <a
-              className="flex h-10 items-center gap-2 whitespace-nowrap rounded-md px-4 transition-colors hover:bg-whiteOpacity lg:hover:bg-[#00000010] lg:hover:text-blue"
+              className="flex h-10 items-center gap-2 whitespace-nowrap rounded px-4 transition-colors hover:bg-whiteOpacity lg:hover:bg-[#00000010] lg:hover:text-blue"
               href={item.link}
             >
               {item.text}
@@ -35,7 +36,7 @@ function MenuItem({ text, link, submenu }) {
       className="group relative flex flex-col gap-1 lg:gap-0"
     >
       <NavLink
-        className="group peer flex h-10 items-center gap-2 whitespace-nowrap rounded-md px-4 leading-xs transition-colors hover:bg-[#ffffff20] aria-[current=page]:!bg-[#ffffff20] group-aria-[hidden=false]:bg-[#ffffff20] data-[show-submenu=true]:bg-[#ffffff20] md:leading-sm lg:data-[show-submenu=true]:bg-transparent"
+        className="group peer flex h-10 items-center gap-2 whitespace-nowrap rounded px-4 leading-xs transition-colors hover:bg-[#ffffff20] aria-[current=page]:!bg-[#ffffff20] group-aria-[hidden=false]:bg-[#ffffff20] data-[show-submenu=true]:bg-[#ffffff20] md:leading-sm lg:data-[show-submenu=true]:bg-transparent"
         to={link}
         onClick={(e) => submenu && context.handleMenuClick(e)}
       >
@@ -77,12 +78,13 @@ export default function Menu() {
             />
           ))}
         </ul>
-        <a
-          className="button bg-white text-blue hover:bg-whiteHover lg:ml-5"
-          href="/"
+
+        <Button
+          className="bg-white text-blue hover:bg-whiteHover lg:ml-5"
+          link="/"
         >
           GET TICKETS
-        </a>
+        </Button>
       </nav>
     </div>
   );

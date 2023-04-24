@@ -1,8 +1,14 @@
 import Countdown from "react-countdown";
 import Icons from "./Icons";
+import Button from "./Button";
 
 export default function Hero({ title, description, btnPrimary, btnSecondary }) {
-  const Completionist = () => <span>You are good to go!</span>;
+  const Completionist = () => (
+    <div className="font-headline text-2xl font-bold text-red sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl">
+      It's LIVE!
+      <span className="inline-flex animate-bounce">🎵</span>
+    </div>
+  );
 
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
@@ -11,12 +17,12 @@ export default function Hero({ title, description, btnPrimary, btnSecondary }) {
     } else {
       // Render a countdown
       return (
-        <>
+        <div className="text-stroke-0 flex gap-5 font-localSans text-3xl font-black sm:text-4xl md:gap-7 md:text-6xl lg:gap-9 lg:text-[120px] xl:text-[142px]">
           <span>{days}d</span>
           <span>{hours}h</span>
           <span>{minutes}m</span>
           <span>{seconds}s</span>
-        </>
+        </div>
       );
     }
   };
@@ -32,26 +38,24 @@ export default function Hero({ title, description, btnPrimary, btnSecondary }) {
           {description}
         </p>
         <div className="mt-6 flex justify-center gap-3 lg:mt-10 lg:gap-5">
-          <a
-            className="button bg-red hover:bg-redHover"
-            href="{{hero.btnPrimary.link}}"
-          >
+          <Button className="bg-red hover:bg-redHover" link={btnPrimary.link}>
             {btnPrimary.text}
-          </a>
-          <a
-            className="button gap-3 whitespace-nowrap bg-transparent px-2 text-base hover:bg-whiteOpacity lg:items-center lg:gap-5 lg:text-xl"
-            href={btnSecondary.link}
+          </Button>
+
+          <Button
+            className="gap-3 whitespace-nowrap bg-transparent px-2 text-base hover:bg-whiteOpacity lg:items-center lg:gap-5 lg:text-xl"
+            link={btnSecondary.link}
           >
             <Icons
               className="h-10 w-10 shrink-0 md:h-12 md:w-12 lg:h-14 lg:w-14"
               icon={btnSecondary.icon}
             />
             {btnSecondary.text}
-          </a>
+          </Button>
         </div>
       </div>
 
-      <div className="text-stroke-0 absolute inset-x-auto bottom-5 flex gap-5 font-localSans text-3xl font-black sm:text-4xl md:gap-7 md:text-6xl lg:gap-9 lg:text-[120px] xl:text-[142px]">
+      <div className="absolute inset-x-auto bottom-5">
         <Countdown date={Date.now() + 500000000} renderer={renderer} />
       </div>
     </section>
