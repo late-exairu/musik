@@ -159,6 +159,33 @@
           "link": "/about",
           "icon": "arrow"
         }
+      },
+      "singers": {
+        "images": [
+          {
+            "url": "./singer_1.png",
+            "title": "about_1"
+          },
+          {
+            "url": "./singer_2.png",
+            "title": "about_2"
+          },
+          {
+            "url": "./singer_3.png",
+            "title": "about_1"
+          },
+          {
+            "url": "./singer_4.png",
+            "title": "about_2"
+          }
+        ],
+        "title": "Singers",
+        "description": "We are proud to partner with some of the most talented and innovative singers in the industry! Our music site is home to a diverse community of singers from all around the world, each with their own unique style and sound. From rising stars to established legends, our singers collaborate with us to bring you the best music possible. With our support, these talented artists are able to reach new audiences, connect with fans, and take their careers to the next level. So join us on this musical journey and discover the incredible talent of our collaborating singers today!",
+        "button": {
+          "text": "View All Singers",
+          "link": "/about",
+          "icon": "arrow"
+        }
       }
     }
   }
