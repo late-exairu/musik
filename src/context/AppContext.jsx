@@ -1,11 +1,20 @@
-import { useState, createContext } from "react";
+import { useState, useEffect, createContext } from "react";
 import useMediaQuery from "../hooks/useMediaQuery.jsx";
 
 const ThemeContext = createContext();
 
 function AppProvider(props) {
+  const [isHeaderSticky, setIsHeaderSticky] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const isScreenLg = useMediaQuery("(min-width: 1024px)");
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkSticky);
+
+    return () => {
+      window.removeEventListener("scroll", checkSticky);
+    };
+  }, []);
 
   function handleBurgerClick() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -29,6 +38,16 @@ function AppProvider(props) {
     }
   }
 
+  function checkSticky() {
+    /* Method that will fix header after a specific scrollable */
+    const scrollTop = window.scrollY;
+    if (scrollTop >= 1) {
+      setIsHeaderSticky(true);
+    } else {
+      setIsHeaderSticky(false);
+    }
+  }
+
   const value = {
     isMobileMenuOpen: isMobileMenuOpen,
     isScreenLg: isScreenLg,
@@ -36,6 +55,7 @@ function AppProvider(props) {
     handleMenuMouseEnter: handleMenuMouseEnter,
     handleMenuMouseLeave: handleMenuMouseLeave,
     handleMenuClick: handleMenuClick,
+    isHeaderSticky: isHeaderSticky,
   };
 
   return (
