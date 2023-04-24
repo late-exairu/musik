@@ -5,7 +5,7 @@ import Icons from "./Icons";
 
 export default function Categories({ title, categoriesList }) {
   return (
-    <section className="pb-10 pt-16 sm:pb-0 sm:pt-20 md:pt-24 lg:pb-28 lg:pt-32 xl:pt-40">
+    <section className="pb-10 pt-16 sm:pb-16 sm:pt-20 md:pt-24 lg:pb-28 lg:pt-32 xl:pt-40">
       <div className="container">
         <h3 className="mb-4 font-headline text-xl font-bold sm:mb-6 md:text-2xl lg:mb-10 xl:mb-14 xl:text-3xl">
           {title}

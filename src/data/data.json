@@ -140,6 +140,25 @@
             "description": "Music characterized by improvisation, syncopated rhythms, and a wide variety of musical instruments, including trumpet, saxophone, piano, bass, and drums."
           }
         ]
+      },
+      "about": {
+        "images": [
+          {
+            "url": "./about_1.png",
+            "title": "about_1"
+          },
+          {
+            "url": "./about_2.png",
+            "title": "about_2"
+          }
+        ],
+        "title": "About Musik",
+        "description": "Musik is your ultimate destination for all things music! We're passionate about music and believe that everyone should have access to the latest and greatest sounds from around the world. Whether you're into pop, rock, jazz, classical, or any other genre, we've got you covered. Discover new artists, stream the latest albums, and connect with a vibrant community of music lovers just like you. Our site is designed to make it easy and fun to explore new music, find your favorites, and stay up-to-date with the latest trends and releases. So come on in, kick back, and let the music take you on a journey you'll never forget!",
+        "button": {
+          "text": "Learn More",
+          "link": "/about",
+          "icon": "arrow"
+        }
       }
     }
   }

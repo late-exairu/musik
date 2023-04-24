@@ -128,6 +128,31 @@ const Jazz = ({ className }) => {
   );
 };
 
+const Arrow = ({ className }) => {
+  return (
+    <svg
+      className={className}
+      width={24}
+      height={24}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clipPath="url(#clip0_1689_42)">
+        <path
+          d="M16.172 11L10.808 5.63598L12.222 4.22198L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"
+          fill="white"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1689_42">
+          <rect width={24} height={24} fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
 const iconsSet = {
   chevron: Chevron,
   play: Play,
@@ -136,6 +161,7 @@ const iconsSet = {
   instrumental: Instrumental,
   rock: Rock,
   jazz: Jazz,
+  arrow: Arrow,
 };
 
 export default function Icons({ icon, className }) {
