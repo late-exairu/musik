@@ -186,6 +186,170 @@
           "link": "/about",
           "icon": "arrow"
         }
+      },
+      "schedule": {
+        "title": "Event Schedule",
+        "scheduleList": [
+          {
+            "title": "Day 01",
+            "date": "16 August",
+            "link": "/",
+            "list": [
+              {
+                "time": "12:00 PM",
+                "description": "Gates Open: Get ready for a day of music and fun with our gates opening at noon. Be sure to arrive early to find the perfect spot for you and your friends!"
+              },
+              {
+                "time": "1:00 PM",
+                "description": "Opening Ceremony: Join us for our opening ceremony at 1:00 PM as we kick off the festival with a special performance by our local school band."
+              },
+              {
+                "time": "2:00 PM",
+                "description": "Indie Rock Showcase: Experience the best of indie rock with performances from bands like The Black Keys, Arctic Monkeys, and Vampire Weekend. Get ready to rock out with these talented artists!",
+                "speakers": [
+                  {
+                    "name": "Yui Ronald",
+                    "img": "./player_1.jpg",
+                    "location": "Booth: 2F12"
+                  }
+                ],
+                "preview": "https://youtu.be/9xwazD5SyVg"
+              },
+              {
+                "time": "4:00 PM",
+                "description": "Hip Hop Hour: It's time to get your groove on with our hip hop hour featuring performances from some of the hottest artists in the game, including Kendrick Lamar, J. Cole, and Drake. Get ready to dance!",
+                "speakers": [
+                  {
+                    "name": "Diana Brock",
+                    "img": "./player_2.jpg",
+                    "location": "Booth: 2F12"
+                  },
+                  {
+                    "name": "Bob John",
+                    "img": "./player_3.jpg",
+                    "location": "Booth: 2F12"
+                  }
+                ],
+                "preview": "https://youtu.be/9xwazD5SyVg"
+              },
+              {
+                "time": "6:00 PM",
+                "description": "Electronic Dance Music (EDM) Night: Join us for a night of electronic dance music featuring some of the biggest names in the industry, including Calvin Harris, David Guetta, and Martin Garrix. Get ready to party all night long!",
+                "speakers": [
+                  {
+                    "name": "Emma Satoshi",
+                    "img": "./player_5.jpg",
+                    "location": "Booth: 2F12"
+                  },
+                  {
+                    "name": "Yui Ronald",
+                    "img": "./player_1.jpg",
+                    "location": "Booth: 2F12"
+                  }
+                ],
+                "preview": "https://youtu.be/9xwazD5SyVg"
+              },
+              {
+                "time": "8:00 PM",
+                "description": "Closing Act: Our closing act is none other than the queen of pop herself, Beyoncé! Get ready for an unforgettable performance from this superstar artist as she brings down the house with her amazing vocals and dance moves.",
+                "speakers": [
+                  {
+                    "name": "Bob John",
+                    "img": "./player_3.jpg",
+                    "location": "Booth: 2F12"
+                  }
+                ],
+                "preview": "https://youtu.be/9xwazD5SyVg"
+              },
+              {
+                "time": "10:00 PM",
+                "description": "Festival Ends: It's been an amazing day of music and fun, but all good things must come to an end. Thank you for joining us at our music festival, and we hope to see you again next year!"
+              }
+            ]
+          },
+          {
+            "title": "Day 02",
+            "date": "17 August",
+            "link": "/",
+            "list": [
+              {
+                "time": "12:00 PM",
+                "description": "Gates Open: Welcome back to day two of our music festival! Gates open at noon, so be sure to arrive early and secure your spot for another day of amazing music."
+              },
+              {
+                "time": "1:00 PM",
+                "description": "Pop Showcase: Get ready for a pop extravaganza with performances from some of the biggest names in the industry, including Ariana Grande, Justin Timberlake, and Taylor Swift. You won't want to miss this!"
+              },
+              {
+                "time": "3:00 PM",
+                "description": "R&B and Soul Hour: Sit back and relax with our R&B and soul hour featuring performances from artists like John Legend, Alicia Keys, and Bruno Mars. Let these soulful tunes soothe your soul.",
+                "speakers": [
+                  {
+                    "name": "Bob John",
+                    "img": "./player_3.jpg",
+                    "location": "Booth: 2F12"
+                  },
+                  {
+                    "name": "Emma Satoshi",
+                    "img": "./player_5.jpg",
+                    "location": "Booth: 2F12"
+                  }
+                ],
+                "preview": "https://youtu.be/9xwazD5SyVg"
+              },
+              {
+                "time": "5:00 PM",
+                "description": "Country Music Night: Yeehaw! It's time for some country music with performances from artists like Blake Shelton, Carrie Underwood, and Luke Bryan. Grab a partner and get ready to two-step the night away.",
+                "speakers": [
+                  {
+                    "name": "Diana Brock",
+                    "img": "./player_2.jpg",
+                    "location": "Booth: 2F12"
+                  },
+                  {
+                    "name": "Sasha Jackson",
+                    "img": "./player_4.jpg",
+                    "location": "Booth: 2F12"
+                  }
+                ],
+                "preview": "https://youtu.be/9xwazD5SyVg"
+              },
+              {
+                "time": "7:00 PM",
+                "description": "Rock Legends: Get ready to rock out with our rock legends hour featuring performances from some of the greatest bands of all time, including Guns N' Roses, AC/DC, and Metallica. This is a show you won't want to miss!",
+                "speakers": [
+                  {
+                    "name": "Yui Ronald",
+                    "img": "./player_1.jpg",
+                    "location": "Booth: 2F12"
+                  }
+                ],
+                "preview": "https://youtu.be/9xwazD5SyVg"
+              },
+              {
+                "time": "9:00 PM",
+                "description": "Closing Act: Our closing act for day two is the one and only, Lady Gaga! Get ready for an unforgettable performance from this talented artist as she takes the stage with her unique style and amazing voice.",
+                "speakers": [
+                  {
+                    "name": "Emma Satoshi",
+                    "img": "./player_5.jpg",
+                    "location": "Booth: 2F12"
+                  },
+                  {
+                    "name": "Sasha Jackson",
+                    "img": "./player_4.jpg",
+                    "location": "Booth: 2F12"
+                  }
+                ],
+                "preview": "https://youtu.be/9xwazD5SyVg"
+              },
+              {
+                "time": "11:00 PM",
+                "description": "Festival Ends: And just like that, another amazing music festival comes to an end. Thank you for joining us for two days of music, fun, and memories that will last a lifetime. We hope to see you again next year!"
+              }
+            ]
+          }
+        ]
       }
     }
   }
