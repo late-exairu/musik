@@ -1,11 +1,29 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Parallax } from "react-scroll-parallax";
 import "swiper/css";
 import Icons from "./Icons";
+import ParallaxItems from "./ParallaxItems";
 
 export default function Categories({ title, categoriesList }) {
   return (
-    <section className="pb-10 pt-16 sm:pb-16 sm:pt-20 md:pt-24 lg:pb-28 lg:pt-32 xl:pt-40">
+    <section className="relative pb-10 pt-16 sm:pb-16 sm:pt-20 md:pt-24 lg:pb-28 lg:pt-32 xl:pt-40">
+      <Parallax
+        className="pointer-events-none absolute left-1 top-64 z-10 ml-0  2xl:left-10"
+        translateY={[0, -500]}
+        rotate={[0, -90]}
+      >
+        <ParallaxItems className="h-10 w-10 lg:h-24 lg:w-24" element="Elem1" />
+      </Parallax>
+
+      <Parallax
+        className="pointer-events-none absolute bottom-60 right-1 z-10 ml-0 2xl:right-10"
+        translateY={[400, -300]}
+        rotate={[0, -90]}
+      >
+        <ParallaxItems className="h-16 w-20 lg:h-32 lg:w-40" element="Elem2" />
+      </Parallax>
+
       <div className="container">
         <h3 className="mb-4 font-headline text-xl font-bold sm:mb-6 md:text-2xl lg:mb-10 xl:mb-14 xl:text-3xl">
           {title}

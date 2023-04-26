@@ -1,9 +1,20 @@
+import { Parallax } from "react-scroll-parallax";
+import ParallaxItems from "./ParallaxItems";
 import Button from "./Button";
 import Icons from "./Icons";
 
 export default function About({ title, description, button, images }) {
   return (
-    <section className="pb-10 pt-16 sm:pb-16 sm:pt-20 md:pt-24 lg:pb-28 lg:pt-28 xl:pt-32">
+    <section className="relative pb-10 pt-16 sm:pb-16 sm:pt-20 md:pt-24 lg:pb-28 lg:pt-28 xl:pt-32">
+      <Parallax
+        className="pointer-events-none absolute left-0 top-40 z-10 ml-0 2xl:left-12"
+        translateY={[400, -100]}
+        rotateY={[0, 460]}
+        rotate={[0, -180]}
+      >
+        <ParallaxItems className="h-24 w-24 lg:h-44 lg:w-40" element="Elem3" />
+      </Parallax>
+
       <div className="container flex flex-col gap-10 md:flex-row md:gap-[70px]">
         <div className="relative mx-auto flex aspect-square items-end justify-end self-start md:w-[48%]">
           <img

@@ -10,9 +10,16 @@ export default {
     },
     container: {
       center: true,
+      maxWidth: "1230px",
       padding: {
         DEFAULT: "20px",
         lg: "30px",
+      },
+      screens: {
+        sm: "600px",
+        md: "728px",
+        lg: "984px",
+        xl: "1240px",
       },
     },
     screens: {
@@ -20,6 +27,7 @@ export default {
       md: "768px",
       lg: "1024px",
       xl: "1230px",
+      "2xl": "1480px",
     },
     fontSize: {
       xs: "0.75rem",

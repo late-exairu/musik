@@ -1,9 +1,30 @@
+import { Parallax } from "react-scroll-parallax";
+import ParallaxItems from "./ParallaxItems";
 import Button from "./Button";
 import Icons from "./Icons";
 
 export default function Singers({ title, description, button, images }) {
   return (
-    <section className="pb-10 pt-16 sm:pb-16 sm:pt-20 md:pt-24 lg:pb-28 lg:pt-28 xl:pt-32">
+    <section className="relative pb-20 pt-16 sm:pb-24 sm:pt-20 md:pt-24 lg:pb-28 lg:pt-28 xl:pt-32">
+      <Parallax
+        className="pointer-events-none absolute right-1 top-80 z-10 ml-0 2xl:right-10"
+        translateY={[0, -300]}
+        rotate={[50, -90]}
+      >
+        <ParallaxItems className="h-20 w-20 lg:h-24 lg:w-24" element="Elem1" />
+      </Parallax>
+
+      <Parallax
+        className="pointer-events-none absolute bottom-0 left-5 z-10 ml-0 2xl:left-12"
+        translateX={[-50, 500]}
+        rotateY={[-50, 160]}
+      >
+        <ParallaxItems
+          className="h-14 w-16 lg:h-20 lg:w-24"
+          element="Triangles"
+        />
+      </Parallax>
+
       <div className="container flex flex-col-reverse gap-10 md:flex-row md:gap-[70px]">
         <div className="md:flex md:w-[40%] md:flex-col md:justify-center">
           <h3 className="mb-4 font-headline text-xl font-bold sm:mb-6 md:text-2xl lg:mb-7 xl:text-3xl">

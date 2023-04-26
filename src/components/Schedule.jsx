@@ -1,8 +1,22 @@
+import { Parallax } from "react-scroll-parallax";
+import ParallaxItems from "./ParallaxItems";
 import { NavLink, Outlet } from "react-router-dom";
 
 export default function Schedule({ title, scheduleList }) {
   return (
-    <section className="overflow-visible bg-gradient-to-b from-blueOpacity pb-10 pt-16 sm:pb-16 sm:pt-20 md:pt-24 lg:pb-28 lg:pt-32">
+    <section className="relative overflow-visible bg-gradient-to-b from-blueOpacity pb-10 pt-16 sm:pb-16 sm:pt-20 md:pt-24 lg:pb-28 lg:pt-32">
+      <Parallax
+        className="pointer-events-none absolute left-1 top-80 z-10 ml-0 hidden 2xl:left-0 2xl:block"
+        translateX={[0, 50]}
+        translateY={[0, 500]}
+        rotate={[-50, 160]}
+      >
+        <ParallaxItems
+          className="h-14 w-16 lg:h-24 lg:w-24"
+          element="Circles"
+        />
+      </Parallax>
+
       <div className="container">
         <h3 className="mb-4 font-headline text-xl font-bold sm:mb-6 md:text-2xl lg:mb-10 xl:text-3xl">
           {title}
