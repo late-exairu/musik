@@ -4,7 +4,7 @@ import Icons from "./Icons";
 export default function ScheduleDay({ list }) {
   return (
     <div className="-mx-5 flex flex-col overflow-hidden rounded-lg border border-[#E0E0E0] md:mx-0">
-      <div className="flex bg-blueOpacity text-lg font-bold lg:text-2xl">
+      <div className="flex bg-blue/5 text-lg font-bold lg:text-2xl">
         <div className="w-3/12 p-5 lg:w-2/12 lg:p-10">Time</div>
         <div className="w-9/12 p-5 lg:w-5/12 lg:p-10">Content</div>
         <div className="hidden p-5 lg:block lg:w-5/12 lg:p-10">Speakers</div>
@@ -39,7 +39,7 @@ export default function ScheduleDay({ list }) {
                   <Button
                     link={item.preview}
                     target="_blank"
-                    className="gap-2 border border-whiteHover text-black hover:bg-blueOpacity md:gap-4"
+                    className="gap-2 border border-whiteHover text-black hover:bg-blue/5 md:gap-4"
                   >
                     Preview
                     <Icons

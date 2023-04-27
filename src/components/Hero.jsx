@@ -43,7 +43,7 @@ export default function Hero({ title, description, btnPrimary, btnSecondary }) {
           </Button>
 
           <Button
-            className="gap-3 whitespace-nowrap bg-transparent px-2 text-base hover:bg-whiteOpacity lg:items-center lg:gap-5 lg:text-xl"
+            className="gap-3 whitespace-nowrap bg-transparent px-2 text-base hover:bg-white/10 lg:items-center lg:gap-5 lg:text-xl"
             link={btnSecondary.link}
           >
             <Icons

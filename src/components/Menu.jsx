@@ -8,13 +8,13 @@ import Button from "./Button";
 
 function DropdownMenu({ submenu }) {
   return (
-    <div className="relative left-0 hidden min-w-full rounded group-aria-[hidden=false]:visible group-aria-[hidden=false]:top-full group-aria-[hidden=false]:opacity-100 peer-data-[show-submenu=true]:block peer-data-[show-submenu=true]:bg-whiteOpacity lg:invisible lg:absolute lg:top-[150%] lg:block lg:opacity-0 lg:transition-all lg:peer-data-[show-submenu=true]:bg-transparent">
+    <div className="relative left-0 hidden min-w-full rounded group-aria-[hidden=false]:visible group-aria-[hidden=false]:top-full group-aria-[hidden=false]:opacity-100 peer-data-[show-submenu=true]:block peer-data-[show-submenu=true]:bg-white/10 lg:invisible lg:absolute lg:top-[150%] lg:block lg:opacity-0 lg:transition-all lg:peer-data-[show-submenu=true]:bg-transparent">
       <div className="ml-4 hidden w-2 border-x-[7px] border-b-[6px] border-t-0 border-solid border-x-transparent border-b-white lg:block"></div>
       <ul className="flex flex-col gap-1 rounded capitalize text-white lg:bg-white lg:p-1 lg:text-black">
         {submenu.map((item, index) => (
           <li key={index}>
             <a
-              className="flex h-10 items-center gap-2 whitespace-nowrap rounded px-4 transition-colors hover:bg-whiteOpacity lg:hover:bg-[#00000010] lg:hover:text-blue"
+              className="flex h-10 items-center gap-2 whitespace-nowrap rounded px-4 transition-colors hover:bg-white/10 lg:hover:bg-[#00000010] lg:hover:text-blue"
               href={item.link}
             >
               {item.text}
@@ -65,7 +65,7 @@ export default function Menu() {
 
   return (
     <div
-      className={`${classes} lg:-px-0 fixed inset-0 z-30 flex-col items-center justify-center bg-whiteOpacity px-5 pt-20 backdrop-blur-md transition-all lg:visible lg:relative lg:block lg:bg-transparent lg:pt-0 lg:opacity-100 lg:backdrop-blur-0`}
+      className={`${classes} lg:-px-0 fixed inset-0 z-30 flex-col items-center justify-center bg-white/10 px-5 pt-20 backdrop-blur-md transition-all lg:visible lg:relative lg:block lg:bg-transparent lg:pt-0 lg:opacity-100 lg:backdrop-blur-0`}
     >
       <nav className="mx-auto flex max-w-xs flex-col gap-2 lg:mx-0 lg:max-w-none lg:flex-row">
         <ul className="flex flex-col gap-2 font-headline text-sm font-semibold uppercase text-white lg:flex-row lg:items-center">

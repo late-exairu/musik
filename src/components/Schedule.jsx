@@ -4,7 +4,7 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export default function Schedule({ title, scheduleList }) {
   return (
-    <section className="relative overflow-visible bg-gradient-to-b from-blueOpacity pb-10 pt-16 sm:pb-16 sm:pt-20 md:pt-24 lg:pb-28 lg:pt-32">
+    <section className="relative overflow-visible bg-gradient-to-b from-blue/5 pb-10 pt-16 sm:pb-16 sm:pt-20 md:pt-24 lg:pb-28 lg:pt-32">
       <Parallax
         className="pointer-events-none absolute left-1 top-80 z-10 ml-0 hidden 2xl:left-0 2xl:block"
         translateX={[0, 50]}
@@ -27,7 +27,7 @@ export default function Schedule({ title, scheduleList }) {
             {scheduleList &&
               scheduleList.map((item, index) => (
                 <NavLink
-                  className="group grow border-b-4 border-blueOpacity py-3 font-headline text-black aria-[current=page]:border-blue aria-[current=page]:text-blue lg:py-4"
+                  className="group grow border-b-4 border-blue/5 py-3 font-headline text-black aria-[current=page]:border-blue aria-[current=page]:text-blue lg:py-4"
                   to={index === 0 ? "/" : "/" + index}
                   key={index}
                 >
