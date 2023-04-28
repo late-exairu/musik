@@ -4,7 +4,7 @@ import Button from "./Button";
 
 export default function Hero({ title, description, btnPrimary, btnSecondary }) {
   const Completionist = () => (
-    <div className="font-headline text-2xl font-bold text-red sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl">
+    <div className="font-montserrat text-2xl font-bold text-red sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl">
       It's LIVE!
       <span className="inline-flex animate-bounce">🎵</span>
     </div>
@@ -31,7 +31,7 @@ export default function Hero({ title, description, btnPrimary, btnSecondary }) {
     <section className="relative flex min-h-screen items-center justify-center bg-black bg-[url('./hero-bg.png')] bg-cover bg-center text-white">
       <div className="absolute inset-0 bg-gradient-to-b from-[#381DDBcc] to-[#00000080]"></div>
       <div className="container relative z-10 max-w-sm py-24 text-center sm:max-w-[560px] md:max-w-[740px] md:pb-32 md:pt-24 lg:max-w-[980px] lg:pb-52 lg:pt-32">
-        <h2 className="mb-3 font-headline text-3xl font-bold capitalize leading-xs sm:mb-6 md:text-5xl lg:mb-10 lg:text-6xl">
+        <h2 className="font-montserrat mb-3 text-3xl font-bold capitalize leading-xs sm:mb-6 md:text-5xl lg:mb-10 lg:text-6xl">
           {title}
         </h2>
         <p className="text-lg leading-lg md:text-xl lg:text-2xl">

@@ -3,8 +3,16 @@ import Categories from "../components/Categories";
 import About from "../components/About";
 import Singers from "../components/Singers";
 import Schedule from "../components/Schedule";
+import Prices from "../components/Prices";
 
-export default function Home({ hero, categories, about, singers, schedule }) {
+export default function Home({
+  hero,
+  categories,
+  about,
+  singers,
+  schedule,
+  prices,
+}) {
   return (
     <>
       <Hero {...hero} />
@@ -12,6 +20,7 @@ export default function Home({ hero, categories, about, singers, schedule }) {
       <About {...about} />
       <Singers {...singers} />
       <Schedule {...schedule} />
+      <Prices {...prices} />
     </>
   );
 }

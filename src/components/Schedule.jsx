@@ -18,7 +18,7 @@ export default function Schedule({ title, scheduleList }) {
       </Parallax>
 
       <div className="container">
-        <h3 className="mb-4 font-headline text-xl font-bold sm:mb-6 md:text-2xl lg:mb-10 xl:text-3xl">
+        <h3 className="font-montserrat mb-4 text-xl font-bold sm:mb-6 md:text-2xl lg:mb-10 xl:text-3xl">
           {title}
         </h3>
 
@@ -27,7 +27,7 @@ export default function Schedule({ title, scheduleList }) {
             {scheduleList &&
               scheduleList.map((item, index) => (
                 <NavLink
-                  className="group grow border-b-4 border-blue/5 py-3 font-headline text-black aria-[current=page]:border-blue aria-[current=page]:text-blue lg:py-4"
+                  className="font-montserrat group grow border-b-4 border-blue/5 py-3 text-black aria-[current=page]:border-blue aria-[current=page]:text-blue lg:py-4"
                   to={index === 0 ? "/" : "/" + index}
                   key={index}
                 >

@@ -350,6 +350,41 @@
             ]
           }
         ]
+      },
+      "prices": {
+        "title": "Choose a Tier that’s right for you",
+        "list": [
+          {
+            "title": "Basic",
+            "price": "$100",
+            "accentColor": "#222222",
+            "description": "<p>1 Seat Available</p><p class='opacity-50'>Access to Wifi Router</p><p class='opacity-50'>Free Food & Coffee</p>",
+            "button": {
+              "text": "Get Tickets",
+              "link": "/"
+            }
+          },
+          {
+            "title": "Standard",
+            "price": "$150",
+            "accentColor": "#381DDB",
+            "description": "<p>1 Seat Available</p><p>Access to Wifi Router</p><p class='opacity-50'>Free Food & Coffee</p>",
+            "button": {
+              "text": "Get Tickets",
+              "link": "/"
+            }
+          },
+          {
+            "title": "Premium",
+            "price": "$200",
+            "accentColor": "#FC5252",
+            "description": "<p>1 Seat Available</p><p>Access to Wifi Router</p><p>Free Food & Coffee</p>",
+            "button": {
+              "text": "Get Tickets",
+              "link": "/"
+            }
+          }
+        ]
       }
     }
   }

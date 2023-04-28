@@ -4,7 +4,7 @@
 
 @layer base {
   .button {
-    @apply inline-flex h-10 items-center justify-center whitespace-pre-wrap rounded px-8 text-center font-headline text-sm font-bold leading-xs text-white transition-all md:h-12 md:text-base md:leading-sm lg:h-14 lg:gap-10;
+    @apply font-montserrat inline-flex h-10 items-center justify-center whitespace-pre-wrap rounded px-8 text-center text-sm font-bold leading-xs text-white transition-all md:h-12 md:text-base md:leading-sm lg:h-14 lg:gap-10;
   }
 
   section {

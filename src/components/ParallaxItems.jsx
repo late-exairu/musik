@@ -92,12 +92,30 @@ function Circles({ className }) {
   );
 }
 
+function Triangle({ className }) {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 48 55"
+    >
+      <path
+        stroke="#FC5252"
+        strokeWidth={4}
+        d="m4.005 27.635 41-23.589.07 47.3-41.07-23.711Z"
+      />
+    </svg>
+  );
+}
+
 const elemSet = {
   Elem1: Elem1,
   Elem2: Elem2,
   Elem3: Elem3,
   Triangles: Triangles,
   Circles: Circles,
+  Triangle: Triangle,
 };
 
 export default function ParallaxItems({ element, className }) {

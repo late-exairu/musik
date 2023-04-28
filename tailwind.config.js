@@ -48,8 +48,10 @@ export default {
       sm: "1.32",
       md: "1.48",
       lg: "1.64",
-      lx: "1.82",
-      double: "2",
+      xl: "1.80",
+      "2xl": "2",
+      "3xl": "2.2",
+      "4xl": "2.4",
     },
     borderRadius: {
       none: "0",
@@ -73,7 +75,7 @@ export default {
     },
     fontFamily: {
       sans: ["Raleway, sans-serif"],
-      headline: ["Montserrat, sans-serif"],
+      montserrat: ["Montserrat, sans-serif"],
       localSans: ["sans-serif"],
     },
     extend: {},
