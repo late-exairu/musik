@@ -109,6 +109,27 @@ function Triangle({ className }) {
   );
 }
 
+function Triangles2({ className }) {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 111 125"
+    >
+      <path
+        fill="#FFA3A3"
+        d="m34 100.281-21.887-81.19 82.159 21.627L34 100.28Z"
+      />
+      <path
+        stroke="#222"
+        strokeWidth={4}
+        d="m83.987 66.38-55.335 54.685L8.557 46.524l75.43 19.855Z"
+      />
+    </svg>
+  );
+}
+
 const elemSet = {
   Elem1: Elem1,
   Elem2: Elem2,
@@ -116,6 +137,7 @@ const elemSet = {
   Triangles: Triangles,
   Circles: Circles,
   Triangle: Triangle,
+  Triangles2: Triangles2,
 };
 
 export default function ParallaxItems({ element, className }) {

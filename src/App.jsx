@@ -9,7 +9,7 @@ import data from "./data/data.json";
 import ScheduleDay from "./components/ScheduleDay";
 
 function App() {
-  const scheduleList = data.pages.home.schedule.scheduleList;
+  const scheduleList = data.sections.schedule.scheduleList;
 
   return (
     <ParallaxProvider>
@@ -17,7 +17,10 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/" element={<Home {...data.pages.home} />}>
+          <Route
+            path="/"
+            element={<Home hero={data.pages.home.hero} {...data.sections} />}
+          >
             {scheduleList.map((item, index) => (
               <Route
                 path={`${index === 0 ? "" : index}`}

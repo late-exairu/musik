@@ -4,6 +4,7 @@ import About from "../components/About";
 import Singers from "../components/Singers";
 import Schedule from "../components/Schedule";
 import Prices from "../components/Prices";
+import Sponsors from "../components/Sponsors";
 
 export default function Home({
   hero,
@@ -12,6 +13,7 @@ export default function Home({
   singers,
   schedule,
   prices,
+  sponsors,
 }) {
   return (
     <>
@@ -21,6 +23,7 @@ export default function Home({
       <Singers {...singers} />
       <Schedule {...schedule} />
       <Prices {...prices} />
+      <Sponsors {...sponsors} />
     </>
   );
 }
