@@ -153,6 +153,29 @@ const Arrow = ({ className }) => {
   );
 };
 
+const Quote = ({ className }) => {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 30 30"
+    >
+      <g clipPath="url(#a)">
+        <path
+          fill="#381DDB"
+          d="M5.729 21.651c-1.288-1.367-1.979-2.9-1.979-5.387 0-4.375 3.071-8.296 7.537-10.235l1.117 1.722c-4.169 2.255-4.984 5.182-5.309 7.027.671-.348 1.55-.47 2.411-.39 2.255.21 4.033 2.06 4.033 4.362a4.375 4.375 0 0 1-4.375 4.375 4.839 4.839 0 0 1-3.435-1.474Zm12.5 0c-1.288-1.367-1.979-2.9-1.979-5.387 0-4.375 3.071-8.296 7.538-10.235l1.116 1.722c-4.169 2.255-4.984 5.182-5.309 7.027.671-.348 1.55-.47 2.411-.39 2.255.21 4.033 2.06 4.033 4.362a4.375 4.375 0 0 1-4.375 4.375 4.838 4.838 0 0 1-3.435-1.474Z"
+        />
+      </g>
+      <defs>
+        <clipPath id="a">
+          <path fill="#fff" d="M0 0h30v30H0z" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
 const iconsSet = {
   chevron: Chevron,
   play: Play,
@@ -162,6 +185,7 @@ const iconsSet = {
   rock: Rock,
   jazz: Jazz,
   arrow: Arrow,
+  quote: Quote,
 };
 
 export default function Icons({ icon, className }) {

@@ -437,6 +437,51 @@
         "text": "Become a Sponsor",
         "link": "/about"
       }
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "list": [
+        {
+          "review": "Attending this music festival was one of the best experiences of my life! The lineup was fantastic, and the energy of the crowd was electric. The organizers did an amazing job creating a fun and safe environment for everyone to enjoy. I would highly recommend this festival to anyone who loves great music and a great time.",
+          "author": "Samantha Johnson",
+          "photo": "./testimonial_1.jpg",
+          "name": "Xavier Johnson",
+          "site": "xavierjohnson.com",
+          "url": "https://xavierjohnson.com/"
+        },
+        {
+          "review": "I had an absolute blast at this music festival! The performances were top-notch, and the atmosphere was so lively and exciting. The staff was super friendly and helpful, which made the whole experience even better. I can't wait to come back next year!",
+          "author": "Jonathan Rodriguez",
+          "photo": "./testimonial_2.jpg",
+          "name": "Amelia Reynolds",
+          "site": "ameliareynolds.com",
+          "url": "https://ameliareynolds.com/"
+        },
+        {
+          "review": "What an incredible festival! The lineup was packed with amazing artists, and the production value was top-notch. I was blown away by the energy and excitement of the crowd, and the whole experience was truly unforgettable. I highly recommend this festival to anyone who loves great music and a great time.",
+          "author": "Isabella Thompson",
+          "photo": "./testimonial_3.jpg",
+          "name": "Eliza Patel",
+          "site": "patelreviews.com",
+          "url": "https://patelreviews.com/"
+        },
+        {
+          "review": "This music festival was absolutely amazing! The variety of artists was incredible, and there was something for everyone. The atmosphere was so lively and fun, and I had an absolute blast dancing the night away. I would definitely come back to this festival again!",
+          "author": "Alexander Richardson",
+          "photo": "./testimonial_4.jpg",
+          "name": "Samantha Lee",
+          "site": "musicadventuresbylee.com",
+          "url": "https://musicadventuresbylee.com/"
+        },
+        {
+          "review": "I had an incredible time at this music festival! The performances were absolutely amazing, and the atmosphere was so lively and fun. The organizers did a fantastic job of creating a safe and inclusive environment for everyone to enjoy. I can't wait to come back next year and do it all again!",
+          "author": "Stephanie Anderson",
+          "photo": "./testimonial_5.jpg",
+          "name": "Gabriel Martinez",
+          "site": "woohoo.com",
+          "url": "https://woohoo.com/"
+        }
+      ]
     }
   }
 }
