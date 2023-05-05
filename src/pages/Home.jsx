@@ -6,6 +6,7 @@ import Schedule from "../components/Schedule";
 import Prices from "../components/Prices";
 import Sponsors from "../components/Sponsors";
 import Testimonials from "../components/Testimonials";
+import Gallery from "../components/Gallery";
 
 export default function Home({
   hero,
@@ -16,6 +17,7 @@ export default function Home({
   prices,
   sponsors,
   testimonials,
+  gallery,
 }) {
   return (
     <>
@@ -27,6 +29,7 @@ export default function Home({
       <Prices {...prices} />
       <Sponsors {...sponsors} />
       <Testimonials {...testimonials} />
+      <Gallery {...gallery} />
     </>
   );
 }

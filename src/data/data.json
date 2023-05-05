@@ -482,6 +482,46 @@
           "url": "https://woohoo.com/"
         }
       ]
+    },
+    "gallery": {
+      "title": "See our Best Shots",
+      "list": [
+        {
+          "photo": "./gallery_1.jpg",
+          "comments": 324,
+          "likes": 128,
+          "title": "Energetic Crowd at Main Stage",
+          "tags": ["music", "festival", "crowd", "mainstage", "performance"]
+        },
+        {
+          "photo": "./gallery_2.jpg",
+          "comments": 142,
+          "likes": 74,
+          "title": "Colorful Lights on the Dance Floor",
+          "tags": ["music", "festival", "dancefloor", "lights", "colors"]
+        },
+        {
+          "photo": "./gallery_3.jpg",
+          "comments": 211,
+          "likes": 91,
+          "title": "Incredible Sunset at the Outdoor Stage",
+          "tags": ["music", "festival", "outdoorstage", "sunset", "landscape"]
+        },
+        {
+          "photo": "./gallery_4.jpg",
+          "comments": 226,
+          "likes": 57,
+          "title": "Pyrotechnics on Stage",
+          "tags": ["music", "festival", "stage", "performance", "pyrotechnics"]
+        },
+        {
+          "photo": "./gallery_5.jpg",
+          "comments": 352,
+          "likes": 102,
+          "title": "Artist on the Smaller Stage",
+          "tags": ["music", "festival", "smallerstage", "performance", "artist"]
+        }
+      ]
     }
   }
 }

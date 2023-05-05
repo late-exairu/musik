@@ -1,24 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Parallax } from "react-scroll-parallax";
 import "swiper/swiper.min.css";
-import Button from "./Button";
-import ParallaxItems from "./ParallaxItems";
 import Icons from "./Icons";
 
 export default function Testimonials({ title, list }) {
   return (
     <section className="relative pb-20 pt-16 sm:pb-24 sm:pt-20 md:pt-24 lg:pb-28 lg:pt-28 xl:pt-32">
-      <Parallax
-        className="pointer-events-none absolute right-1 top-64 z-10 ml-0  2xl:right-10"
-        translateY={[200, -300]}
-        rotate={[0, -90]}
-      >
-        <ParallaxItems
-          className="h-10 w-10 lg:h-20 lg:w-20"
-          element="Triangle"
-        />
-      </Parallax>
-
       <div className="container max-w-sm sm:max-w-lg md:max-w-2xl xl:max-w-[830px]">
         <h3 className="mb-4 text-center font-montserrat text-xl font-bold sm:mb-6 md:text-2xl lg:mb-10 xl:mb-14 xl:text-3xl">
           {title}
