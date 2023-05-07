@@ -5,8 +5,9 @@ import Home from "./pages/Home";
 import Artists from "./pages/Artists";
 import Schedule from "./pages/Schedule";
 import Contacts from "./pages/Contacts";
-import data from "./data/data.json";
 import ScheduleDay from "./components/ScheduleDay";
+import Footer from "./components/Footer";
+import data from "./data/data.json";
 
 function App() {
   const scheduleList = data.sections.schedule.scheduleList;
@@ -34,6 +35,8 @@ function App() {
           <Route path="/schedule" element={<Schedule />}></Route>
           <Route path="/contacts" element={<Contacts />}></Route>
         </Routes>
+
+        <Footer socials={data.brand.socials} {...data.footer} />
       </BrowserRouter>
     </ParallaxProvider>
   );
