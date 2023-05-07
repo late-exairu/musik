@@ -38,12 +38,13 @@ export default function Hero({ title, description, btnPrimary, btnSecondary }) {
           {description}
         </p>
         <div className="mt-6 flex justify-center gap-3 lg:mt-10 lg:gap-5">
-          <Button className="bg-red hover:bg-redHover" link={btnPrimary.link}>
+          <Button color="red" link={btnPrimary.link}>
             {btnPrimary.text}
           </Button>
 
           <Button
-            className="gap-3 whitespace-nowrap bg-transparent px-2 text-base hover:bg-white/10 lg:items-center lg:gap-5 lg:text-xl"
+            color="transparent"
+            className="gap-3 whitespace-nowrap px-2 text-base lg:items-center lg:gap-5 lg:text-xl"
             link={btnSecondary.link}
           >
             <Icons

@@ -79,10 +79,7 @@ export default function Menu() {
           ))}
         </ul>
 
-        <Button
-          className="bg-white text-blue hover:bg-whiteHover lg:ml-5"
-          link="/"
-        >
+        <Button color="white" className="lg:ml-5" link="/">
           GET TICKETS
         </Button>
       </nav>

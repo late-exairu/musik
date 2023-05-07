@@ -45,7 +45,7 @@ export default function Sponsors({ title, list, button }) {
 
         {button && (
           <Button
-            className="button mx-auto mt-10 flex w-max bg-blue md:mt-16 lg:mt-20"
+            className="mx-auto mt-10 flex w-max md:mt-16 lg:mt-20"
             link={button.link}
           >
             {button.text}

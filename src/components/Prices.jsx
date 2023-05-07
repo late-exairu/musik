@@ -62,7 +62,7 @@ export default function Prices({ title, list }) {
                 ></div>
 
                 <Button
-                  className="mx-auto flex w-max bg-blue"
+                  className="mx-auto flex w-max"
                   link={priceItem.button.link}
                 >
                   {priceItem.button.text}

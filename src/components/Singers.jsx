@@ -32,7 +32,8 @@ export default function Singers({ title, description, button, images }) {
           </h3>
           <div className="text-sm font-thin md:text-base">{description}</div>
           <Button
-            className="mr-auto mt-5 inline-flex gap-3 bg-blue md:mt-12 lg:mt-20"
+            color="blue"
+            className="mr-auto mt-5 gap-3 md:mt-12 lg:mt-20"
             link={button.link}
           >
             {button.text}

@@ -37,9 +37,10 @@ export default function ScheduleDay({ list }) {
 
                 {item.preview && (
                   <Button
+                    color="transparent"
                     link={item.preview}
                     target="_blank"
-                    className="gap-2 border border-whiteHover text-black hover:bg-blue/5 md:gap-4"
+                    className="gap-2 text-black hover:bg-black/5 md:gap-4"
                   >
                     Preview
                     <Icons

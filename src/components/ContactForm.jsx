@@ -1,5 +1,6 @@
 import React from "react";
 import Input from "./Input";
+import { buttonStyles } from "./Button";
 
 export default function ContactForm({ title, formItems, button }) {
   return (
@@ -17,7 +18,13 @@ export default function ContactForm({ title, formItems, button }) {
           )
         )}
 
-        <button type="submit" className="button mt-5 w-full bg-blue md:mt-10">
+        <button
+          type="submit"
+          className={buttonStyles({
+            className: "mt-5 md:mt-10",
+            fullWidth: true,
+          })}
+        >
           {button.text}
         </button>
       </form>
