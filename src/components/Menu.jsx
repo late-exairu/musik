@@ -10,7 +10,7 @@ function DropdownMenu({ submenu }) {
   return (
     <div className="relative left-0 hidden min-w-full rounded group-aria-[hidden=false]:visible group-aria-[hidden=false]:top-full group-aria-[hidden=false]:opacity-100 peer-data-[show-submenu=true]:block peer-data-[show-submenu=true]:bg-white/10 lg:invisible lg:absolute lg:top-[150%] lg:block lg:opacity-0 lg:transition-all lg:peer-data-[show-submenu=true]:bg-transparent">
       <div className="ml-4 hidden w-2 border-x-[7px] border-b-[6px] border-t-0 border-solid border-x-transparent border-b-white lg:block"></div>
-      <ul className="flex flex-col gap-1 rounded capitalize text-white lg:bg-white lg:p-1 lg:text-black">
+      <ul className="flex flex-col gap-1 rounded capitalize text-white shadow-md lg:bg-white lg:p-1 lg:text-black">
         {submenu.map((item, index) => (
           <li key={index}>
             <a
