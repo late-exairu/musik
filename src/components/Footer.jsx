@@ -22,7 +22,7 @@ export default function Footer({ socials, menu, copyright }) {
           )}
           {socials && (
             <Socials
-              className="mx-auto mt-6 flex justify-center gap-5 md:gap-[30px] lg:mt-0"
+              className="mx-auto mt-6 flex justify-center gap-5 fill-white md:gap-[30px] lg:mt-0"
               list={socials}
             />
           )}

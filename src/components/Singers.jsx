@@ -27,7 +27,7 @@ export default function Singers({ title, description, button, images }) {
 
       <div className="container flex flex-col-reverse gap-10 md:flex-row md:gap-[70px]">
         <div className="md:flex md:w-[40%] md:flex-col md:justify-center">
-          <h3 className="font-montserrat mb-4 text-xl font-bold sm:mb-6 md:text-2xl lg:mb-7 xl:text-3xl">
+          <h3 className="mb-4 font-montserrat text-xl font-bold sm:mb-6 md:text-2xl lg:mb-7 xl:text-3xl">
             {title}
           </h3>
           <div className="text-sm font-thin md:text-base">{description}</div>
@@ -36,7 +36,7 @@ export default function Singers({ title, description, button, images }) {
             link={button.link}
           >
             {button.text}
-            <Icons icon="arrow" />
+            <Icons className="fill-white" icon="arrow" />
           </Button>
         </div>
 

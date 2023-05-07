@@ -23,12 +23,12 @@ export default function Testimonials({ title, list }) {
               >
                 <blockquote className="relative bg-black/5 px-5 py-12 pb-16 text-black/60 md:px-16 md:pb-16 lg:px-20 lg:py-12 lg:pb-20">
                   <Icons
-                    className="absolute left-4 top-3 h-8 w-8 md:left-7 md:top-5"
+                    className="absolute left-4 top-3 h-8 w-8 fill-blue md:left-7 md:top-5"
                     icon="quote"
                   />
                   {item.review}
                   <Icons
-                    className="absolute bottom-3 right-4 h-8 w-8 rotate-180 md:bottom-12 md:right-8"
+                    className="absolute bottom-3 right-4 h-8 w-8 rotate-180 fill-blue md:bottom-12 md:right-8"
                     icon="quote"
                   />
                 </blockquote>
