@@ -44,10 +44,10 @@ export default function Testimonials({ title, list }) {
             }}
             className="overflow-visible"
           >
-            <div className="swiper-prev swiper-button-prev absolute -left-10 top-40 z-10 hidden h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-white shadow-md lg:flex 2xl:-left-36">
+            <div className="swiper-prev swiper-button-prev absolute -left-10 top-40 z-10 hidden h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-white shadow-md transition-all lg:flex 2xl:-left-36 [&.swiper-button-disabled]:invisible [&.swiper-button-disabled]:opacity-0">
               <Icons className="w-3" icon="sliderArrow" />
             </div>
-            <div className="swiper-next swiper-button-prev absolute -right-10 top-40 z-10 hidden h-14 w-14 cursor-pointer items-center justify-center rounded-full  bg-white shadow-md lg:flex 2xl:-right-36">
+            <div className="swiper-next swiper-button-prev absolute -right-10 top-40 z-10 hidden h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-white  shadow-md transition-all lg:flex 2xl:-right-36 [&.swiper-button-disabled]:invisible [&.swiper-button-disabled]:opacity-0">
               <Icons className="w-3 rotate-180" icon="sliderArrow" />
             </div>
             {list.map((item, index) => (
