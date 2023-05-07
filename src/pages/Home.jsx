@@ -7,6 +7,7 @@ import Prices from "../components/Prices";
 import Sponsors from "../components/Sponsors";
 import Testimonials from "../components/Testimonials";
 import Gallery from "../components/Gallery";
+import ContactsSection from "../components/ContactsSection";
 
 export default function Home({
   hero,
@@ -18,6 +19,8 @@ export default function Home({
   sponsors,
   testimonials,
   gallery,
+  contactUs,
+  contactForm,
 }) {
   return (
     <>
@@ -30,6 +33,7 @@ export default function Home({
       <Sponsors {...sponsors} />
       <Testimonials {...testimonials} />
       <Gallery {...gallery} />
+      <ContactsSection contactUs={contactUs} contactForm={contactForm} />
     </>
   );
 }

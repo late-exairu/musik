@@ -15,7 +15,7 @@ export default function Testimonials({ title, list }) {
         </h3>
 
         <Icons
-          className="absolute left-20 top-5 h-60 w-60 opacity-10 md:left-1/2 md:top-10 md:h-[360px] md:w-[360px] md:-translate-x-[500px]"
+          className="absolute left-20 top-5 h-60 w-60 fill-pink opacity-10 md:left-1/2 md:top-10 md:h-[360px] md:w-[360px] md:-translate-x-[500px]"
           icon="instagram"
         />
 

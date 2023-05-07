@@ -354,7 +354,6 @@ const iconsSet = {
   jazz: Jazz,
   arrow: Arrow,
   quote: Quote,
-  // instagram: Instagram,
   like: Like,
   comment: Comment,
   sliderArrow: SliderArrow,
