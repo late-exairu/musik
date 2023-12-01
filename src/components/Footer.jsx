@@ -4,7 +4,7 @@ import Socials from "./Socials";
 
 export default function Footer({ socials, menu, copyright }) {
   return (
-    <footer className="bg-black text-white" aria-label="Footer">
+    <footer className="mt-auto bg-black text-white" aria-label="Footer">
       <div className="container py-6 md:py-10">
         <Logo className="mx-auto mb-6 flex w-24 lg:inline-flex lg:w-32" />
 
