@@ -19,7 +19,7 @@ function App() {
 
         <Routes>
           <Route
-            path="/"
+            path="/musik"
             element={<Home hero={data.pages.home.hero} {...data.sections} />}
           >
             {scheduleList.map((item, index) => (
